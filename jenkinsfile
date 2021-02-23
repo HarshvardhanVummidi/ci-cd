@@ -4,7 +4,7 @@ pipeline {
         timeout(time: 15, unit: 'MINUTES')
     }
     triggers {
-        cron('H * * * 1-5')
+        cron('59 23 * * *')
     }
     parameters {
         string(name:'MAVENGOAL',defaultValue:'clean package',description: 'adding parametres for the project')
